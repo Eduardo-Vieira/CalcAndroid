@@ -1,10 +1,14 @@
 package com.br.calcsamples
 
 class CalcAndroid {
-    fun numberSun(number: ArrayList<Int>): Int {
+    fun numberSum(number: ArrayList<Int>, operation:String): Int {
         var result:Int = 0
         number.forEach {
-            result = result + it
+            result = when(operation){
+                "-" -> result - it
+                "+" -> result + it
+                else -> 0
+            }
         }
         return result
     }
