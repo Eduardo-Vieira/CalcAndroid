@@ -1,0 +1,3 @@
+rootProject.name='CalcClass'
+include ':app'
+include ':calcsamples'
